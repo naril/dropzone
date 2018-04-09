@@ -1687,7 +1687,8 @@
   drawImageIOSFix = function(ctx, img, sx, sy, sw, sh, dx, dy, dw, dh) {
     var vertSquashRatio;
     vertSquashRatio = detectVerticalSquash(img);
-    return ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh / vertSquashRatio);
+    // return ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh / vertSquashRatio);
+    return ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh);
   };
 
 
